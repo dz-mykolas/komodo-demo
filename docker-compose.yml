@@ -2,8 +2,3 @@ services:
   web:
     image: nginx:alpine
     ports: ["8080:80"]
-    healthcheck:
-      test: ["CMD", "service", "nginx", "status"]
-      interval: 10s
-      timeout: 3s
-      retries: 3
